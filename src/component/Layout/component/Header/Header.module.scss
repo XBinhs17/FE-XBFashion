@@ -1,0 +1,54 @@
+
+.wrapper{
+    width: 100%;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 40px;
+    background-color: var(--primary-color);
+
+
+    .header__top-logo{
+        font-family: "Dancing Script", serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: var(--white-color);
+    }
+
+    .header__top-search{
+
+        .input-container{
+            position: relative;
+
+            input{
+                width: 800px;
+                border-radius: 999px;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1.6rem;
+                outline: none;
+            }
+
+            button{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px 30px;
+                border-radius: 999px;
+                right: 0;
+                border: 1px solid var(--secondary-color);
+                background-color: var(--secondary-color);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.header__bottom{
+    height: 50px;
+    background-color: var(--secondary-color);
+}
