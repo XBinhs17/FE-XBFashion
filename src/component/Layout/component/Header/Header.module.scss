@@ -1,9 +1,8 @@
-
-.wrapper{
+.wrapper {
     width: 100%;
 }
 
-.header__top{
+.header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,19 +11,19 @@
     background-color: var(--primary-color);
 
 
-    .header__top-logo{
+    .header__top-logo {
         font-family: "Dancing Script", serif;
         font-weight: bold;
         font-size: 32px;
         color: var(--white-color);
     }
 
-    .header__top-search{
+    .header__top-search {
 
-        .input-container{
+        .input-container {
             position: relative;
 
-            input{
+            input {
                 width: 800px;
                 border-radius: 999px;
                 border: none;
@@ -33,7 +32,7 @@
                 outline: none;
             }
 
-            button{
+            button {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -46,9 +45,38 @@
             }
         }
     }
+
+    .header__top-action {
+        display: flex;
+        gap: 15px;
+    }
 }
 
-.header__bottom{
+.header__bottom {
     height: 50px;
     background-color: var(--secondary-color);
+
+    .header__bottom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .bottom__nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: var(--black-color);
+                    font-size: 2.0rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }

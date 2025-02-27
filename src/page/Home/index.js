@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 
 function Home() {
     return ( 
-        <div>
+        <div className={cx('wrapper')}>
             <Button primary>Xem chi tiết</Button>
             <Button outline>Outline</Button>
             <Button secondary>Xem chi tiết</Button>
