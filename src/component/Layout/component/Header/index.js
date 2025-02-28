@@ -8,7 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "~/component/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("header__top")}>
-        <div className={cx("header__top-logo")}>.XBBook</div>
+        <div className={cx("header__top-logo")}><Link to="/">.XBFashion</Link></div>
 
         <form className={cx("header__top-search")}>
           <div className={cx("input-container")}>
@@ -44,16 +44,40 @@ function Header() {
         <nav className={cx("header__bottom-nav")}>
           <ul className={cx("bottom__nav-menu")}>
             <li>
-              <Link to="/">Trang chủ</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? cx("active") : "")}
+                end
+              >
+                Trang chủ
+              </NavLink>
             </li>
             <li>
-              <Link to="/san-pham">Sản phẩm</Link>
+              <NavLink
+                to="/sanpham"
+                className={({ isActive }) => (isActive ? cx("active") : "")}
+                end
+              >
+                Sản phẩm
+              </NavLink>
             </li>
             <li>
-              <Link to="/tin-tuc">Tin tức</Link>
+              <NavLink
+                to="/tuixach"
+                className={({ isActive }) => (isActive ? cx("active") : "")}
+                end
+              >
+                Túi xách
+              </NavLink>
             </li>
             <li>
-              <Link to="/ve-chung-toi">Về chúng tôi</Link>
+              <NavLink
+                to="/phukien"
+                className={({ isActive }) => (isActive ? cx("active") : "")}
+                end
+              >
+                Phụ kiện
+              </NavLink>
             </li>
           </ul>
         </nav>
