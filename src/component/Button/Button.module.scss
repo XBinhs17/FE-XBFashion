@@ -27,6 +27,7 @@
     @extend .style_button;
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
+    transition: all .1s ease;
 
     &:hover{
         background-color: var(--primary-color);

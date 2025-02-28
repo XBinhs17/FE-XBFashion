@@ -1,21 +1,22 @@
-.footer__top{
+.footer__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 100px;
     background-color: var(--primary-color);
     height: 60px;
 
-    .footer__top-title{
+    .footer__top-title {
         width: 30%;
         font-size: 18px;
         color: var(--white-color);
     }
 
-    .footer__top-form{
+    .footer__top-form {
         width: 70%;
-        form{
-            input{
+
+        form {
+            input {
                 width: 80%;
                 font-size: 16px;
                 padding: 10px 10px 10px 20px;
@@ -23,7 +24,8 @@
                 // border-radius: 999px 0 0 999px;
                 border: 1px solid var(--white-color);
             }
-            button{
+
+            button {
                 width: 20%;
                 font-size: 16px;
                 padding: 10px;
@@ -36,10 +38,82 @@
                 cursor: pointer;
                 transition: all .1s ease;
 
-                &:hover{
+                &:hover {
                     background-color: var(--secondary-color);
                 }
             }
         }
     }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 30px 100px;
+    line-height: 35px;
+
+    .content__title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .content__link {
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: var(--black-color);
+                    transition: all .1s ease;
+
+                    &:hover {
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__content-info {
+
+    .content__info-logo {
+       
+        a{
+            font-family: "Dancing Script", serif;
+            font-weight: bold;
+            font-size: 45px;
+            color: var(--white-color);
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer__content-connect {
+
+    .content__social {
+        display: flex;
+        gap: 20px;
+    }
+
+    img {
+        height: 40px;
+        transition: all .1s ease;
+
+        &:hover{
+            transform: scale(1.2);
+            filter: drop-shadow(4px 4px 10px rgba(255, 255, 255, 0.9));
+        }
+    }
+}
+
+.footer__bottom{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 40px;
+    color: var(--white-color);
 }
