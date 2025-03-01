@@ -1,0 +1,68 @@
+.wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 400px;
+    height: 150px;
+    border: 1px solid var(--black-color);
+    padding: 10px;
+}
+
+.left__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    height: 100%;
+    font-size: 32px;
+    width: 30%;
+    background-color: var(--primary-color);
+}
+
+.right__card {
+    width: 68%;
+    padding: 0 10px;
+    line-height: 25px;
+    border-left: 1px dashed var(--black-color);
+
+    .voucher__title{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .voucher__des{
+        font-size: 16px;
+    }
+
+    .voucher__code{
+        p{
+            font-weight: bold;
+        }
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+.style_circle {
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+}
+
+.circle1 {
+    @extend .style_circle;
+    top: -7px;
+    left: 31%;
+    clip-path: inset(35% 0 0 0);
+}
+.circle2 {
+    @extend .style_circle;
+    bottom: -7px;
+    left: 31%;
+    clip-path: inset( 0 0 35% 0);
+}
