@@ -7,8 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 import VoucherCard from "~/component/VoucherCard";
+import ProductCard from "~/component/ProductCard";
 const cx = classNames.bind(styles);
 
 function Home() {
@@ -68,9 +69,9 @@ function Home() {
 
         <section className={cx("section__voucher")}>
           <Swiper
-            spaceBetween={20} 
-            slidesPerView={4} 
-            navigation={true} 
+            spaceBetween={20}
+            slidesPerView={4}
+            navigation={true}
             modules={[Navigation]}
             className="mySwiper"
             breakpoints={{
@@ -81,15 +82,36 @@ function Home() {
           >
             {[...Array(10)].map((_, index) => (
               <SwiperSlide key={index}>
-                <div className={cx('voucher-card')}><VoucherCard /></div>
+                <div className={cx("voucher-card")}>
+                  <VoucherCard />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
 
         <section className={cx("section__featured-products")}>
-          <h2>Sản Phẩm Nổi Bật</h2>
-          <p>Lựa chọn các mẫu hot nhất hiện nay.</p>
+          <div className={cx("featured__products-title")}>
+            <h2>Sản Phẩm Nổi Bật</h2>
+          </div>
+          <div className={cx("featured__product-list")}>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
         </section>
       </main>
     </div>
