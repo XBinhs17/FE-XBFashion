@@ -1,6 +1,6 @@
 .wrapper {
     min-height: 70vh;
-    padding-top: 111px;
+    padding: 111px 0 50px 0;
 }
 
 .banner {
@@ -22,4 +22,22 @@
         padding:0 40px;
     }
 
+}
+
+.section__featured-products{
+    padding: 20px 100px;
+
+    .featured__products-title{
+        text-align: center;
+        margin: 10px 0 20px 0;
+        font-family: "Dancing Script", serif;
+        font-weight: bold;
+        font-size: 32px;
+        border-bottom: 1px solid var(--black-color);
+    }
+
+    .featured__product-list{
+        display: flex;
+        gap: 10px;
+    }
 }

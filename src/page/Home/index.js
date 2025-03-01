@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import VoucherCard from "~/component/VoucherCard";
+import ProductCard from "~/component/ProductCard";
 const cx = classNames.bind(styles);
 
 function Home() {
@@ -88,8 +89,15 @@ function Home() {
         </section>
 
         <section className={cx("section__featured-products")}>
-          <h2>Sản Phẩm Nổi Bật</h2>
-          <p>Lựa chọn các mẫu hot nhất hiện nay.</p>
+          <div className={cx('featured__products-title')}><h2>Sản Phẩm Nổi Bật</h2></div>
+          <div className={cx('featured__product-list')}>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+          </div>
+
         </section>
       </main>
     </div>
