@@ -103,14 +103,9 @@ function Home() {
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+          </div>
+          <div className={cx("featured__product-button")}>
+            <Button primary>Xem thêm</Button>
           </div>
         </section>
       </main>

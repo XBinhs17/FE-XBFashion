@@ -41,4 +41,11 @@
         gap: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .featured__product-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 }

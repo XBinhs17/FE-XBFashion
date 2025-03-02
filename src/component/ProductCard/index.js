@@ -13,13 +13,14 @@ function ProductCard() {
       </div>
 
       <div className={cx("card__bottom")}>
-        <div className={cx("card__bottom-left")}>
-          <div className={cx("product__name")}>Light Green Nuggets Woven Flared Skirt</div>
-          <di className={cx("product__price")}>1.500.000 đ</di>
+        <div className={cx("product__name")}>
+          Light Green Nuggets Woven Flared Skirt
         </div>
-        <div className={cx("card__bottom-right")}>
-          <Button outline>Chi tiết</Button>
+        <div className={cx("product__price")}>
+          <div className={cx("product__price-origin")}>1.500.000 đ</div>
+          <div className={cx("product__price-discount")}>750.000 đ</div>
         </div>
+        <Button outline>Xem chi tiết</Button>
       </div>
     </div>
   );
