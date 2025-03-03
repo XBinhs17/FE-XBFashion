@@ -60,6 +60,14 @@
         .product__price-discount {
             color: var(--red-color);
             font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .tag__sale{
+            background-color: var(--red-color);
+            padding: 0 20px;
+            color: var(--white-color);
+            font-weight: 500;
         }
     }
 

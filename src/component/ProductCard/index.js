@@ -19,6 +19,7 @@ function ProductCard() {
         <div className={cx("product__price")}>
           <div className={cx("product__price-origin")}>1.500.000 đ</div>
           <div className={cx("product__price-discount")}>750.000 đ</div>
+          <div className={cx("tag__sale")}>-50%</div>
         </div>
         <Button outline>Xem chi tiết</Button>
       </div>
