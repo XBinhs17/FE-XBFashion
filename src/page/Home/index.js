@@ -109,7 +109,53 @@ function Home() {
           </div>
         </section>
 
-        
+        <section className={cx("section__featured-categories")}>
+            <div className={cx("featured__categories-title")}>
+              <h2>DANH MỤC NỔI BẬT</h2>
+            </div>
+            <div className={cx("featured__categories-list", "row")}>
+              <div className={cx("categories__list-left", "col-md-6")}>
+                <div className={cx("left__card")}>
+                  <img
+                    src="https://res.cloudinary.com/dypftrmtl/image/upload/v1741093127/AoSoMi_ggk79p.webp"
+                    alt="Áo sơ mi"
+                  />
+                  <div className={cx("left__card-bottom")}>
+                    <h3>Áo sơ mi</h3>
+                    <Button primary>Xem thêm</Button>
+                  </div>
+                </div>
+              </div>
+
+              <div className={cx("categories__list-right", "col-md-6")}>
+                <div className={cx("list__right-top", "row")}>
+
+                  <div className={cx("right__top-card")}>
+                    <img
+                      src="https://res.cloudinary.com/dypftrmtl/image/upload/v1741093127/ChanVay_kpujeu.jpg"
+                      alt="Chân váy"
+                    />
+                    <div className={cx("top__card-bottom")}>
+                      <h3>Chân váy</h3>
+                      <Button primary>Xem thêm</Button>
+                    </div>
+                  </div>
+
+                  <div className={cx("right__top-card")}>
+                      <img
+                        src="https://res.cloudinary.com/dypftrmtl/image/upload/v1741093126/DamCongSo_jn2qyx.webp"
+                        alt="Đầm công sở"
+                      />
+                      <div className={cx("top__card-bottom")}>
+                        <h3>Đầm công sở</h3>
+                        <Button primary>Xem thêm</Button>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+        </section>
       </main>
     </div>
   );

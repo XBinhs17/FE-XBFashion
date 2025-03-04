@@ -18,16 +18,16 @@
     padding: 20px 100px;
     gap: 20px;
 
-    .voucher-card{
-        padding:0 40px;
+    .voucher-card {
+        padding: 0 40px;
     }
 
 }
 
-.section__featured-products{
+.section__featured-products {
     padding: 20px 100px;
 
-    .featured__products-title{
+    .featured__products-title {
         text-align: center;
         margin: 10px 0 20px 0;
         font-family: "Dancing Script", serif;
@@ -36,16 +36,93 @@
         border-bottom: 1px solid var(--black-color);
     }
 
-    .featured__product-list{
+    .featured__product-list {
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .featured__product-button{
+    .featured__product-button {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+    }
+}
+
+.section__featured-categories {
+    padding: 0 100px;
+
+    %card-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    
+        h3 {
+            color: var(--white-color);
+            font-size: 18px;
+        }
+    }
+
+    .featured__categories-title {
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--black-color);
+    }
+
+    .featured__categories-list {
+        margin-top: 20px;
+        .categories__list-left {
+            background-color: aqua;
+            .left__card {
+                position: relative;
+                width: 800px;
+                height: 1000px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                .left__card-bottom{
+                    @extend %card-bottom;
+                }
+            }
+        }
+
+        .categories__list-right{
+            background-color: antiquewhite;
+
+            .list__right-top{
+                background-color: azure;
+
+                .right__top-card{
+                    position: relative;
+                    display: flex;
+                    width: 400px;
+                    height: 500px;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+
+                    .top__card-bottom{
+                        @extend %card-bottom;
+                    }
+                }
+            }
+        }
     }
 }
